@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendufe FC Juvenis</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.358.0/lucide.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="home" id="home-page">
+        <div class="text-center">
+            <div class="logo-container">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rendufe-DWrdLxfloIXTZiPGPyh4PeW1ygKAAK.png" 
+                     alt="Rendufe FC Logo" 
+                     class="logo">
+            </div>
+            <h1>Rendufe FC Juvenis</h1>
+            <button class="btn btn-primary" onclick="navigateTo('dashboard')">
+                Entrar
+            </button>
+        </div>
+    </main>
+
+    <main class="dashboard hidden" id="dashboard-page">
+        <div class="container">
+            <h1>Rendufe FC Juvenis</h1>
+
+            <div class="button-container">
+                <a href="https://resultados.fpf.pt/Competition/Details?competitionId=25974&seasonId=104" 
+                   class="btn btn-outline" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                    <i data-lucide="trophy"></i>
+                    Classificação
+                </a>
+
+                <a href="https://www.zerozero.pt/equipa/rendufe/16833" 
+                   class="btn btn-outline" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                    <i data-lucide="bar-chart-2"></i>
+                    Estatísticas
+                </a>
+
+                <button class="btn btn-outline" onclick="navigateTo('social')">
+                    <i data-lucide="share-2"></i>
+                    Redes Sociais
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <main class="social hidden" id="social-page">
+        <div class="container">
+            <h1>Redes Sociais</h1>
+
+            <div class="button-container">
+                <a href="https://www.instagram.com/rendufe.fc/" 
+                   class="btn btn-outline" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                    <i data-lucide="instagram"></i>
+                    Rendufe FC
+                </a>
+
+                <a href="https://www.instagram.com/rendufefc_formacao/" 
+                   class="btn btn-outline" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                    <i data-lucide="instagram"></i>
+                    Rendufe Formação
+                </a>
+
+                <a href="https://www.instagram.com/rendufe.fc_sub17/" 
+                   class="btn btn-outline" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                    <i data-lucide="instagram"></i>
+                    Rendufe Sub-17
+                </a>
+            </div>
+
+            <button class="btn btn-ghost" onclick="navigateTo('dashboard')">
+                Voltar
+            </button>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
